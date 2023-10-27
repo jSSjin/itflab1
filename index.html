@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huhe</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML = document.getElementById("username").value + "'s Gallery"
+        }
+        function setImage(){
+            document.getElementById("profileimg").style.backgroundImage = "url(" + document.getElementById("image_url").value + ")";
+        }
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div class="flex-item-1">
+                <!--Avatar-->
+                <div class="avatar" id="profileimg"></div>
+                <div class="noti"><p>2</p></div>
+            </div>
+            <div>
+                <a href="https://translate.google.com/" class="on-hover">
+                <p style="font-weight: 700;" id="myusername">User Name, Gallery</p>
+                </a>
+            </div>
+            <div class="flex-item-2">
+                <div><label>Username</label><input type="text" style="margin-left: 5px;" id="username"><button style="margin-left: 5px;" onclick="display()">set</button></div>
+                <div><label>Image URL</label><input type="text" style="margin-left: 5px;" id="image_url"><button style="margin-left: 5px;" onclick="setImage()">set</button></div>
+                <div></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="grid-column: span 2 / span 2; background-image: url(download\ \(1\).jpg);"></div>
+            <div class="gallery-item" style="background-image: url(images.jpg);"></div> 
+            <div class="gallery-item" style="background-image: url(cpnrrs9clsl61.png);"></div>
+            <div class="gallery-item" style="background-image: url(tumblr_edfd62869fd136333d335f5edade1c28_71f97817_640.png);"></div>
+            <div class="gallery-item" style="background-image: url(jujutsu-kaisen-season-2-key-visual.avif);"></div>
+            <div class="gallery-item" style="background-image: url(images\ \(1\).jpg);"></div>
+            <div class="gallery-item" style="grid-row: span 2 / span 2; background-image: url(119.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(download.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(jjk_fanart_by_yuumei_defvuq1-fullview.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(jujutsu-kaisen-season-2-key-visual.avif);"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+            <div class="gallery-item" style="background-image: url();"></div>
+        </div>
+    </div>
+</body>
+</html>
